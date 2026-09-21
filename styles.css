@@ -13,21 +13,21 @@
   --border-primary: #c1b6ad;
   --border-inverse: #665f55;
 
-  --social-twitter-hover-icon: url("./images/Icons/twitter-dark.svg");
-  --social-instagram-hover-icon: url("./images/Icons/instagram-dark.svg");
-  --social-facebook-hover-icon: url("./images/Icons/facebook-dark.svg");
+  --social-twitter-hover-icon: url("./images/icons/twitter-dark.svg");
+  --social-instagram-hover-icon: url("./images/icons/instagram-dark.svg");
+  --social-facebook-hover-icon: url("./images/icons/facebook-dark.svg");
 
-  --theme-light-inactive-icon: url("./images/Icons/Sun-dark.svg");
-  --theme-dark-icon: url("./images/Icons/Dark.svg");
-  --theme-dark-hover-icon: url("./images/Icons/Moon-light.svg");
+  --theme-light-inactive-icon: url("./images/icons/sun-dark.svg");
+  --theme-dark-icon: url("./images/icons/moon-dark.svg");
+  --theme-dark-hover-icon: url("./images/icons/moon-light.svg");
 
-  --coffee-cup-icon: url("./images/Icons/coffee-cup.svg");
-  --logo-image: url("./images/Logo/logo.png");
+  --coffee-cup-icon: url("./images/icons/coffee-cup-dark.svg");
+  --logo-image: url("./images/logo/logo-dark.svg");
 
-  --slider-prev-icon: url("./images/Icons/arrow-left.svg");
-  --slider-next-icon: url("./images/Icons/arrow-right.svg");
-  --slider-prev-hover-icon: url("./images/Icons/arrow-left-light.svg");
-  --slider-next-hover-icon: url("./images/Icons/arrow-right-light.svg");
+  --slider-prev-icon: url("./images/icons/arrow-left-dark.svg");
+  --slider-next-icon: url("./images/icons/arrow-right-dark.svg");
+  --slider-prev-hover-icon: url("./images/icons/arrow-left-light.svg");
+  --slider-next-hover-icon: url("./images/icons/arrow-right-light.svg");
 
   --font-family-main: Inter, sans-serif;
   --font-weight-regular: 400;
@@ -108,18 +108,18 @@ body.theme-dark {
   --border-primary: #665f55;
   --border-inverse: #c1b6ad;
 
-  --social-twitter-hover-icon: url("./images/Icons/twitter.svg");
-  --social-instagram-hover-icon: url("./images/Icons/instagram.svg");
-  --social-facebook-hover-icon: url("./images/Icons/facebook.svg");
+  --social-twitter-hover-icon: url("./images/icons/twitter-light.svg");
+  --social-instagram-hover-icon: url("./images/icons/instagram-light.svg");
+  --social-facebook-hover-icon: url("./images/icons/facebook-light.svg");
 
-  --theme-light-inactive-icon: url("./images/Icons/Sun-light.svg");
-  --theme-dark-icon: url("./images/Icons/Moon-light.svg");
+  --theme-light-inactive-icon: url("./images/icons/sun-light.svg");
+  --theme-dark-icon: url("./images/icons/moon-light.svg");
 
-  --coffee-cup-icon: url("./images/Icons/coffee-cup-light.svg");
-  --logo-image: url("./images/Logo/logo-light.svg");
+  --coffee-cup-icon: url("./images/icons/coffee-cup-light.svg");
+  --logo-image: url("./images/logo/logo-light.svg");
 
-  --slider-prev-icon: url("./images/Icons/arrow-left-light.svg");
-  --slider-next-icon: url("./images/Icons/arrow-right-light.svg");
+  --slider-prev-icon: url("./images/icons/arrow-left-light.svg");
+  --slider-next-icon: url("./images/icons/arrow-right-light.svg");
 }
 
 img {
@@ -595,11 +595,11 @@ button {
 }
 
 body.theme-dark .store-link__icon--apple {
-  content: url("./images/Icons/apple-light.svg");
+  content: url("./images/icons/apple-light.svg");
 }
 
 body.theme-dark .store-link__icon--google {
-  content: url("./images/Icons/google-play-light.svg");
+  content: url("./images/icons/google-play-light.svg");
 }
 
 .store-link__content {
@@ -1096,11 +1096,11 @@ body.theme-dark .store-link__icon--google {
   }
 
   .store-link:hover .store-link__icon--apple {
-    content: url("./images/Icons/apple-light.svg");
+    content: url("./images/icons/apple-light.svg");
   }
 
   .store-link:hover .store-link__icon--google {
-    content: url("./images/Icons/google-play-light.svg");
+    content: url("./images/icons/google-play-light.svg");
   }
 
   .slider__button:hover {

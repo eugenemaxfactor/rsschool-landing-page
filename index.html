@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">
-          <img class="logo__image" src="./images/Logo/logo.png" alt="Coffee House" />
+          <img class="logo__image" src="./images/logo/logo-dark.svg" alt="Coffee House" />
         </a>
 
         <nav class="nav">
@@ -37,20 +38,20 @@
         <div class="header__controls">
           <div class="theme-switcher">
             <button class="theme-switcher__button" type="button" data-theme="light">
-              <img class="theme-switcher__icon" src="./images/Icons/Sun-light.svg" alt="" />
+              <img class="theme-switcher__icon" src="./images/icons/sun-light.svg" alt="" />
             </button>
             <button class="theme-switcher__button" type="button" data-theme="dark">
-              <img class="theme-switcher__icon" src="./images/Icons/Dark.svg" alt="" />
+              <img class="theme-switcher__icon" src="./images/icons/moon-dark.svg" alt="" />
             </button>
           </div>
 
           <a class="menu-link" href="./menu.html">
             Menu
-            <img class="menu-link__icon" src="./images/Icons/coffee-cup.svg" alt="" />
+            <img class="menu-link__icon" src="./images/icons/coffee-cup-dark.svg" alt="" />
           </a>
 
           <div class="header__burger">
-            <img class="header__burger-image" src="./images/Icons/menu.svg" alt="" />
+            <img class="header__burger-image" src="./images/icons/menu.svg" alt="" />
           </div>
         </div>
       </div>
@@ -68,7 +69,7 @@
             </p>
             <a class="button hero__button" href="./menu.html">
               Menu
-              <img class="hero__button-icon" src="./images/Icons/coffee-cup.svg" alt="" />
+              <img class="hero__button-icon" src="./images/icons/coffee-cup-dark.svg" alt="" />
             </a>
           </div>
         </section>
@@ -78,7 +79,7 @@
 
           <div class="slider">
             <button class="slider__button slider__button--prev" type="button">
-              <img class="slider__icon slider__icon--prev" src="./images/Icons/arrow-left.svg" alt="" />
+              <img class="slider__icon slider__icon--prev" src="./images/icons/arrow-left-dark.svg" alt="" />
             </button>
 
             <article class="coffee-card">
@@ -94,14 +95,14 @@
             </article>
 
             <button class="slider__button slider__button--next" type="button">
-              <img class="slider__icon slider__icon--next" src="./images/Icons/arrow-right.svg" alt="" />
+              <img class="slider__icon slider__icon--next" src="./images/icons/arrow-right-dark.svg" alt="" />
             </button>
           </div>
 
           <div class="slider-pagination">
-            <span class="slider-pagination__item slider-pagination__item--active"></span>
-            <span class="slider-pagination__item"></span>
-            <span class="slider-pagination__item"></span>
+            <div class="slider-pagination__item slider-pagination__item--active"></div>
+            <div class="slider-pagination__item"></div>
+            <div class="slider-pagination__item"></div>
           </div>
         </section>
 
@@ -141,18 +142,18 @@
 
             <div class="mobile-app__links">
               <a class="store-link" href="https://www.apple.com/app-store/" target="_blank">
-                <img class="store-link__icon store-link__icon--apple" src="./images/Icons/icon.svg" alt="" />
-                <span class="store-link__content">
+                <img class="store-link__icon store-link__icon--apple" src="./images/icons/apple-dark.svg" alt="" />
+                <div class="store-link__content">
                   <span class="store-link__caption">Available on the</span>
                   <span class="store-link__name">App Store</span>
-                </span>
+                </div>
               </a>
               <a class="store-link" href="https://play.google.com/store/apps" target="_blank">
-                <img class="store-link__icon store-link__icon--google" src="./images/Icons/google-play.svg" alt="" />
-                <span class="store-link__content">
+                <img class="store-link__icon store-link__icon--google" src="./images/icons/google-play-dark.svg" alt="" />
+                <div class="store-link__content">
                   <span class="store-link__caption">Available on</span>
                   <span class="store-link__name">Google Play</span>
-                </span>
+                </div>
               </a>
             </div>
           </div>
@@ -175,17 +176,17 @@
           <ul class="socials">
             <li class="socials__item">
               <a class="socials__link" href="https://twitter.com/" target="_blank">
-                <img class="socials__icon socials__icon--twitter" src="./images/Icons/twitter.svg" alt="" />
+                <img class="socials__icon socials__icon--twitter" src="./images/icons/twitter-light.svg" alt="" />
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.instagram.com/" target="_blank">
-                <img class="socials__icon socials__icon--instagram" src="./images/Icons/instagram.svg" alt="" />
+                <img class="socials__icon socials__icon--instagram" src="./images/icons/instagram-light.svg" alt="" />
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.facebook.com/" target="_blank">
-                <img class="socials__icon socials__icon--facebook" src="./images/Icons/facebook.svg" alt="" />
+                <img class="socials__icon socials__icon--facebook" src="./images/icons/facebook-light.svg" alt="" />
               </a>
             </li>
           </ul>
@@ -196,21 +197,20 @@
 
           <div class="contacts__list">
             <a class="contacts__link" href="https://maps.google.com/?q=8558+Green+Rd,+LA" target="_blank">
-              <img class="contacts__icon" src="./images/Icons/pin-alt.svg" alt="" />
+              <img class="contacts__icon" src="./images/icons/pin-alt.svg" alt="" />
               8558 Green Rd., LA
             </a>
             <a class="contacts__link" href="tel:+16035550123">
-              <img class="contacts__icon" src="./images/Icons/phone.svg" alt="" />
+              <img class="contacts__icon" src="./images/icons/phone.svg" alt="" />
               +1 (603) 555-0123
             </a>
             <p class="contacts__text">
-              <img class="contacts__icon" src="./images/Icons/clock.svg" alt="" />
+              <img class="contacts__icon" src="./images/icons/clock.svg" alt="" />
               Mon-Sat: 9:00 AM - 23:00
             </p>
           </div>
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
   </body>
 </html>
