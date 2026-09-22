@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Coffee House</title>
+    <link rel="icon" href="./images/img-hero.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html">
+          <img class="logo__image" src="./images/logo/logo-dark.svg" alt="Coffee House">
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html#favorite">Favorite coffee</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html#mobile-app">Mobile app</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__controls">
+          <div class="theme-switcher">
+            <button class="theme-switcher__button" type="button" data-theme="light">
+              <img class="theme-switcher__icon" src="./images/icons/sun-light.svg" alt="">
+            </button>
+            <button class="theme-switcher__button" type="button" data-theme="dark">
+              <img class="theme-switcher__icon" src="./images/icons/moon-dark.svg" alt="">
+            </button>
+          </div>
+
+          <div class="menu-link menu-link--active">
+            Menu
+            <img class="menu-link__icon" src="./images/icons/coffee-cup-dark.svg" alt="">
+          </div>
+
+          <div class="header__burger">
+            <img class="header__burger-image" src="./images/icons/menu.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="menu">
+          <h1 class="menu__title">
+            Behind each of our cups hides an <span class="menu__title-accent">amazing surprise</span>
+          </h1>
+
+          <div class="menu__categories">
+            <button class="menu__category menu__category--active" type="button" disabled>
+              <span class="menu__category-icon">
+                <img class="menu__category-image" src="./images/icons/coffee.png" alt="">
+              </span>
+              Coffee
+            </button>
+            <button class="menu__category menu__category--available" type="button">
+              <span class="menu__category-icon">
+                <img class="menu__category-image" src="./images/icons/tea.png" alt="">
+              </span>
+              Tea
+            </button>
+            <button class="menu__category menu__category--available" type="button">
+              <span class="menu__category-icon">
+                <img class="menu__category-image" src="./images/icons/cake.png" alt="">
+              </span>
+              Dessert
+            </button>
+          </div>
+
+          <div class="menu__cards">
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-1.jpg" alt="Irish coffee">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Irish coffee</h2>
+                  <p class="product-card__text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                </div>
+                <p class="product-card__price">$7.00</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-2.jpg" alt="Kahlua coffee">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Kahlua coffee</h2>
+                  <p class="product-card__text">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                </div>
+                <p class="product-card__price">$7.00</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-3.jpg" alt="Honey raf">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Honey raf</h2>
+                  <p class="product-card__text">Espresso with frothed milk, cream and aromatic honey</p>
+                </div>
+                <p class="product-card__price">$5.50</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-4.jpg" alt="Ice cappuccino">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Ice cappuccino</h2>
+                  <p class="product-card__text">Cappuccino with soft thick foam in summer version with ice</p>
+                </div>
+                <p class="product-card__price">$5.00</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-5.jpg" alt="Espresso">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Espresso</h2>
+                  <p class="product-card__text">Classic black coffee</p>
+                </div>
+                <p class="product-card__price">$4.50</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-6.jpg" alt="Latte">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Latte</h2>
+                  <p class="product-card__text">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                </div>
+                <p class="product-card__price">$5.50</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-7.jpg" alt="Latte macchiato">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Latte macchiato</h2>
+                  <p class="product-card__text">Espresso with frothed milk and chocolate</p>
+                </div>
+                <p class="product-card__price">$5.50</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="./images/coffee-8.jpg" alt="Coffee with cognac">
+              </div>
+              <div class="product-card__content">
+                <div class="product-card__description">
+                  <h2 class="product-card__title">Coffee with cognac</h2>
+                  <p class="product-card__text">Fragrant black coffee with cognac and whipped cream</p>
+                </div>
+                <p class="product-card__price">$6.50</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="menu__more-button" type="button">
+            <img class="menu__more-icon" src="./images/icons/refresh.svg" alt="">
+          </button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <div class="footer__content">
+          <h2 class="section-title footer__title">
+            Sip, Savor, Smile.<br />
+            <span class="footer__title-accent">It's coffee time!</span>
+          </h2>
+
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href="https://twitter.com/" target="_blank">
+                <img class="socials__icon socials__icon--twitter" src="./images/icons/twitter-light.svg" alt="">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.instagram.com/" target="_blank">
+                <img class="socials__icon socials__icon--instagram" src="./images/icons/instagram-light.svg" alt="">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.facebook.com/" target="_blank">
+                <img class="socials__icon socials__icon--facebook" src="./images/icons/facebook-light.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <h3 class="contacts__title">Contact us</h3>
+
+          <div class="contacts__list">
+            <a class="contacts__link" href="https://maps.google.com/?q=8558+Green+Rd,+LA" target="_blank">
+              <img class="contacts__icon" src="./images/icons/pin-alt.svg" alt="">
+              8558 Green Rd., LA
+            </a>
+            <a class="contacts__link" href="tel:+16035550123">
+              <img class="contacts__icon" src="./images/icons/phone.svg" alt="">
+              +1 (603) 555-0123
+            </a>
+            <p class="contacts__text">
+              <img class="contacts__icon" src="./images/icons/clock.svg" alt="">
+              Mon-Sat: 9:00 AM - 23:00
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
