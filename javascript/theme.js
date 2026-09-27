@@ -4,6 +4,7 @@ const THEME_DARK = 'dark';
 
 const themeButtons = document.querySelectorAll('[data-theme]');
 
+// Управляет светлой и темной темой сайта и сохраняет выбор пользователя.
 function setTheme(theme) {
   const isDarkTheme = theme === THEME_DARK;
 
