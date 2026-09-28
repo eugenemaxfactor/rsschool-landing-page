@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <script src="./javascript/theme.js" defer></script>
+    <script src="./javascript/burger.js" defer></script>
+    <script src="./javascript/carousel.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -18,7 +20,7 @@
           <img class="logo__image" src="./images/logo/logo-dark.svg" alt="Coffee House">
         </a>
 
-        <nav class="nav">
+        <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#favorite">Favorite coffee</a>
@@ -31,6 +33,12 @@
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#contacts">Contact us</a>
+            </li>
+            <li class="nav__item nav__item--mobile-menu">
+              <a class="menu-link menu-link--mobile" href="./menu.html">
+                Menu
+                <img class="menu-link__icon" src="./images/icons/coffee-cup-dark.svg" alt="">
+              </a>
             </li>
           </ul>
         </nav>
@@ -45,14 +53,14 @@
             </button>
           </div>
 
-          <a class="menu-link" href="./menu.html">
+          <a class="menu-link menu-link--desktop" href="./menu.html">
             Menu
             <img class="menu-link__icon" src="./images/icons/coffee-cup-dark.svg" alt="">
           </a>
 
-          <div class="header__burger">
+          <button class="header__burger" type="button" aria-label="Open menu" data-burger>
             <img class="header__burger-image" src="./images/icons/menu.svg" alt="">
-          </div>
+          </button>
         </div>
       </div>
     </header>
@@ -78,31 +86,31 @@
           <h2 class="section-title favorite__title">Choose your <span class="favorite__title-accent">favorite</span> coffee</h2>
 
           <div class="slider">
-            <button class="slider__button slider__button--prev" type="button">
+            <button class="slider__button slider__button--prev" type="button" data-slider-prev>
               <img class="slider__icon slider__icon--prev" src="./images/icons/arrow-left-dark.svg" alt="">
             </button>
 
-            <article class="coffee-card">
-              <img class="coffee-card__image" src="./images/coffee-slider-1.png" alt="S'mores Frappuccino">
+            <article class="coffee-card" data-slider-card>
+              <img class="coffee-card__image" src="./images/coffee-slider-1.png" alt="S'mores Frappuccino" data-slider-image>
 
               <div class="coffee-card__content">
-                <h3 class="coffee-card__title">S'mores Frappuccino</h3>
-                <p class="coffee-card__text">
+                <h3 class="coffee-card__title" data-slider-title>S'mores Frappuccino</h3>
+                <p class="coffee-card__text" data-slider-text>
                   This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.
                 </p>
-                <p class="coffee-card__price">$5.50</p>
+                <p class="coffee-card__price" data-slider-price>$5.50</p>
               </div>
             </article>
 
-            <button class="slider__button slider__button--next" type="button">
+            <button class="slider__button slider__button--next" type="button" data-slider-next>
               <img class="slider__icon slider__icon--next" src="./images/icons/arrow-right-dark.svg" alt="">
             </button>
           </div>
 
           <div class="slider-pagination">
-            <div class="slider-pagination__item slider-pagination__item--active"></div>
-            <div class="slider-pagination__item"></div>
-            <div class="slider-pagination__item"></div>
+            <div class="slider-pagination__item slider-pagination__item--active" data-slider-pagination></div>
+            <div class="slider-pagination__item" data-slider-pagination></div>
+            <div class="slider-pagination__item" data-slider-pagination></div>
           </div>
         </section>
 
@@ -204,10 +212,10 @@
               <img class="contacts__icon" src="./images/icons/phone.svg" alt="">
               +1 (603) 555-0123
             </a>
-            <p class="contacts__text">
+            <div class="contacts__text">
               <img class="contacts__icon" src="./images/icons/clock.svg" alt="">
               Mon-Sat: 9:00 AM - 23:00
-            </p>
+            </div>
           </div>
         </div>
       </div>
