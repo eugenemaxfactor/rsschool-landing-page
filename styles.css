@@ -9,7 +9,6 @@
   --bg-button: #e1d4c9;
   --bg-overlay: rgba(64, 63, 61, 0.8);
   --bg-modal: #e1d4c9;
-  --bg-modal-control: #665f55;
   --border-primary: #c1b6ad;
   --border-inverse: #665f55;
 
@@ -111,7 +110,6 @@ body.theme-dark {
   --bg-button: #292826;
   --bg-overlay: rgba(41, 40, 38, 0.8);
   --bg-modal: var(--bg-container);
-  --bg-modal-control: var(--bg-page);
   --border-primary: #665f55;
   --border-inverse: #c1b6ad;
 
@@ -919,12 +917,26 @@ body.theme-dark .store-link__icon--google {
   border-radius: var(--radius-round);
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base);
 }
 
 .modal__option-button--active {
   background-color: var(--bg-container);
   border-color: var(--bg-container);
   color: var(--text-inverse);
+}
+
+.modal__option-button--size.modal__option-button--active {
+  cursor: default;
+  pointer-events: none;
+}
+
+body.theme-dark .modal__option-button--active {
+  background-color: var(--bg-page);
+  border-color: var(--bg-page);
 }
 
 .modal__option-mark {
@@ -935,11 +947,18 @@ body.theme-dark .store-link__icon--google {
   height: 30px;
   border-radius: var(--radius-round);
   background-color: var(--border-primary);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 .modal__option-button--active .modal__option-mark {
   background-color: var(--bg-page);
   color: var(--text-primary);
+}
+
+body.theme-dark .modal__option-button--active .modal__option-mark {
+  background-color: var(--bg-container);
 }
 
 .modal__total {
@@ -980,7 +999,7 @@ body.theme-dark .store-link__icon--google {
   min-height: 44px;
   border-width: var(--border-width-default);
   border-style: solid;
-  border-color: var(--bg-modal-control);
+  border-color: var(--border-primary);
   border-radius: var(--radius-round);
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
@@ -1220,20 +1239,6 @@ body.theme-dark .store-link__icon--google {
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
-  .header__nav {
-    display: flex;
-  }
-
-  .menu-link--desktop {
-    display: flex;
-  }
-
-  .header__burger {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .product-card:nth-child(n + 5) {
     display: none;
@@ -1314,6 +1319,10 @@ body.theme-dark .store-link__icon--google {
 
   .mobile-app__media {
     margin: 0 30px;
+  }
+
+  .slider {
+    justify-content: center;
   }
 
   .slider__button {
@@ -1451,5 +1460,38 @@ body.theme-dark .store-link__icon--google {
 
   .menu__category--available:hover .menu__category-icon {
     background-color: var(--bg-page);
+  }
+
+  .modal__close-button:hover {
+    background-color: var(--bg-container);
+    border-color: var(--bg-container);
+    color: var(--text-inverse);
+  }
+
+  .modal__option-button:not(.modal__option-button--active):hover {
+    background-color: var(--bg-container);
+    border-color: var(--bg-container);
+    color: var(--text-inverse);
+  }
+
+  .modal__option-button:not(.modal__option-button--active):hover .modal__option-mark {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+
+  body.theme-dark .modal__close-button:hover {
+    background-color: var(--bg-page);
+    border-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+
+  body.theme-dark .modal__option-button:not(.modal__option-button--active):hover {
+    background-color: var(--bg-page);
+    border-color: var(--bg-page);
+    color: var(--text-primary);
+  }
+
+  body.theme-dark .modal__option-button:not(.modal__option-button--active):hover .modal__option-mark {
+    background-color: var(--bg-container);
   }
 }

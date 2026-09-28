@@ -1,7 +1,7 @@
 const header = document.querySelector('.header');
 const burgerButton = document.querySelector('[data-burger]');
 const burgerMenuLinks = document.querySelectorAll('.header__nav a');
-const desktopMediaQuery = window.matchMedia('(min-width: 769px)');
+const desktopMediaQuery = window.matchMedia('(min-width: 993px)');
 
 function toggleBurgerMenu() {
   header.classList.toggle('header--menu-open');

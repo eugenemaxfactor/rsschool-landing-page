@@ -69,7 +69,7 @@ const modalCloseButton = document.querySelector('[data-modal-close]');
 function createSizeButton(sizeKey, sizeValue) {
   const button = document.createElement('button');
 
-  button.className = 'modal__option-button';
+  button.className = 'modal__option-button modal__option-button--size';
   button.type = 'button';
   button.dataset.addPrice = sizeValue['add-price'];
   button.addEventListener('click', activateSizeButton);
